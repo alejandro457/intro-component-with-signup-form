@@ -55,8 +55,6 @@ form.addEventListener('submit', (e) => {
     form.querySelectorAll('.singup__input').forEach( field => {
         valid.push(validateField(field, messages));
     });
-
-    console.log(valid.every( isValid => isValid));
     
     if (!valid.every( isValid => isValid)) {
         e.preventDefault();
